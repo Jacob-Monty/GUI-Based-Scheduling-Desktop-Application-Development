@@ -1,0 +1,73 @@
+Title and Purpose:
+C195 - Scheduling Application
+A program that takes a SQL database and allows the user to update, add and delete information through a GUI.
+
+Contact Information:
+Author - Jacob Montoya
+Student ID #001433510
+Student Application version 1.0 1/31/2024
+
+Version Numbers:
+IntelliJ IDEA 2023.2.5 (Ultimate Edition)
+Build #IU-232.10227.8, built on November 8, 2023
+Licensed to Jacob Montoya
+Subscription is active until December 1, 2024.
+For educational use only.
+Runtime version: 17.0.9+7-b1000.46 amd64
+VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+Windows 10.0
+GC: G1 Young Generation, G1 Old Generation
+Memory: 2048M
+Cores: 12
+Registry:
+ ide.experimental.ui=true
+Kotlin: 232-1.9.0-IJ10227.8
+
+javafx-sdk-21.0.1
+
+JDK Development Kit 21.0.2
+
+Directions to run Program:
+Launch program and enter username and password into the text-fields. Both are case sensitive so enter them as follows:
+Username: test
+Password: test
+
+If either the username or password is blank or incorrect it will show an alert and deny login. Once logged  in the program
+will show the user an alert letting them know of any appointments coming up within 15 minutes.
+
+Main Schedule Screen:
+
+    Appointments Section:
+    The top table on the screen will display all appointments that are currently in the database. There are three radio buttons
+    to filter the appointments table. Show weekly, monthly, and all appointments. Below the table there are three buttons.
+    Update Button:
+    This button will let the user update a selected appointment and update the appointment table
+    Add button:
+    This button allows user to add a new appointment into the database and displays alerts for any blank fields before saving.
+    Once saved the new appointment will display on the appointment table.
+    Delete button:
+    this button allows the user to delete a appointment from the appointment table. An alert will show before deletion to confirm delete.
+
+    Customer Section:
+    The bottom table shows all customers in the database. Below the table there are three buttons.
+    Update Button:
+    This button will let the user update a selected customer and update the customer table
+    Add button:
+    This button allows user to add a new customer into the database and displays alerts for any blank fields before saving.
+    Once saved the new customer will display on the appointment table.
+    Delete button:
+    this button allows the user to delete a customer from the customer table. An alert will show before deletion to confirm delete.
+    This will also delete any connected appointment to the deleted customer.
+
+    There is also a reports button that will show you the reports screen and a logout button that will exit the user from the program.
+
+Reports Screen:
+    Appointments table by contact: This table displays all appointments base off selected contact.
+    Appointment by type shows the number of appointments by type.
+    Appointment by month shows number of appointments by month.
+    Country table shows all countries that have an appointment and how many.
+    Back button takes user back to Main Schedule Screen
+    Logout button exits the program.
+
+mysql-connector-j-8.2.0
+

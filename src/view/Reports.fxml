@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="471.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Reports">
+   <children>
+      <Label layoutX="31.0" layoutY="26.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="contactScheduleTableView" layoutX="29.0" layoutY="99.0" prefHeight="116.0" prefWidth="788.0">
+        <columns>
+          <TableColumn fx:id="appointID" prefWidth="50.333309173583984" text="ID" />
+          <TableColumn fx:id="appointTitle" prefWidth="73.66669464111328" text="Title" />
+            <TableColumn fx:id="appointType" prefWidth="81.66668701171875" text="Type" />
+            <TableColumn fx:id="appointDescription" prefWidth="101.66667175292969" text="Description" />
+            <TableColumn fx:id="appLocation" prefWidth="80.66668701171875" text="Location" />
+            <TableColumn fx:id="appointStart" prefWidth="152.66665649414062" text="Start Date/Time" />
+            <TableColumn fx:id="appointEnd" prefWidth="129.99993896484375" text="End Date/Time" />
+            <TableColumn fx:id="appointCustomerID" prefWidth="90.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="appointmentTypeTableView" layoutX="29.0" layoutY="238.0" prefHeight="171.0" prefWidth="260.0">
+        <columns>
+          <TableColumn fx:id="appointmentType" prefWidth="128.33335876464844" text="Appointment Type" />
+            <TableColumn fx:id="appointmentTotal" prefWidth="132.0" text="Total Appointments" />
+        </columns>
+      </TableView>
+      <TableView fx:id="countryTableView" layoutX="575.0" layoutY="238.0" prefHeight="171.0" prefWidth="245.0">
+        <columns>
+          <TableColumn fx:id="appointmentCountry" prefWidth="132.33334350585938" text="Country" />
+          <TableColumn fx:id="totalCountry" prefWidth="111.6666259765625" text="Total Country" />
+        </columns>
+      </TableView>
+      <Label layoutX="474.0" layoutY="72.0" text="Select a Contact:" />
+      <ComboBox fx:id="selectContactCB" layoutX="574.0" layoutY="68.0" onAction="#selectContact" prefHeight="25.0" prefWidth="140.0" />
+      <Button fx:id="backButton" layoutX="548.0" layoutY="423.0" mnemonicParsing="false" onAction="#pushBackToScheduleScreen" text="Back" />
+      <Button fx:id="logoutButton" layoutX="644.0" layoutY="423.0" mnemonicParsing="false" onAction="#pushLogout" text="Logout" />
+      <TableView fx:id="appointmentMonthTableView" layoutX="302.0" layoutY="238.0" prefHeight="171.0" prefWidth="260.0">
+         <columns>
+            <TableColumn fx:id="appointmentMonth" prefWidth="128.33335876464844" text="Appointment Month" />
+            <TableColumn fx:id="appointmentMonthTotal" prefWidth="132.0" text="Month Total" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
